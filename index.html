@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="ch">
   <head>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>石头剪刀布</title>
+
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
+    <h1>石头剪刀布游戏</h1>
+    <div class="button-row">
+      <button id="rock" name="choice" type="button">石头</button>
+      <button id="paper" name="choice" type="button">布</button>
+      <button id="scissors" name="choice" type="button">剪刀</button>
+    </div>
 
     <script>
       // You can also require other files to run in this process
