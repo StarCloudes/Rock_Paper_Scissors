@@ -3,18 +3,18 @@
 // All of the Node.js APIs are available in this process.
 //获取按钮的选择值
 $("button[name=choice]").on("click", function () {
-            let buttonid = $(this).prop("id");
-            let choise2 = '';
-            let random = Math.random();
+            let buttonid = $(this).prop("id")
+            let choise2 = ''
+            let random = Math.random()
 
             if (random < 0.34)
-                choise2 = 'rock';
+                choise2 = 'rock'
             else if (random <= 0.67)
-                choise2 = "paper";
+                choise2 = "paper"
             else
-                choise2 = "scissors";
-            compare(buttonid, choise2);
-
+                choise2 = "scissors"
+            compare(buttonid, choise2)
+        })
 // 比较，并返回输赢结果
 function compare(choice1, choice2) {
     if (!choice1 || !choice2) return;
@@ -46,11 +46,11 @@ function compare(choice1, choice2) {
 
 function notificaiton(result) {
     if (result === "你赢了") {
-        alert("你赢了");
+       swal("你赢了", "幸运儿!", "success");
     } else if (result === "你输了") {
-        alert("你输了");
+       swal("你输了", "别放弃!", "error");
     } else if (result === "平局") {
-        alert("平局");
+        swal("平局", "加把劲!", "info");
     }
     return
 }
