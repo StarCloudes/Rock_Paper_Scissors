@@ -1,0 +1,13 @@
+.btn-rock {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.rock-button-row {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
