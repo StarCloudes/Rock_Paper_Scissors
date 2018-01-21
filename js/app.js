@@ -1,7 +1,7 @@
 // This file is required by the index.html file and will
 // be executed in the renderer process for that window.
 // All of the Node.js APIs are available in this process.
-//获取按钮的选择值
+//点击按钮开始游戏
 $("button[name=choice]").on("click", function () {
             let buttonid = $(this).prop("id")
             let choise2 = ''
@@ -42,7 +42,9 @@ function compare(choice1, choice2) {
             result = '你输了';
     }
     notificaiton(result);
+    addscore(result);
 }
+
 
 function notificaiton(result) {
     if (result === "你赢了") {
@@ -54,3 +56,26 @@ function notificaiton(result) {
     }
     return
 }
+
+function addscore(result){
+    let computerScoresSpan = $('#computer-scores').text(), 
+    computerScores = parseInt(computerScoresSpan);
+    let userScoresSpan = $('#user-scores').text(), 
+    userScores = parseInt(userScoresSpan);
+    
+    if (result === "你赢了") {
+        userScores += 1;
+        $('#user-scores').text(userScores);
+    }else if(result === "你输了"){
+        computerScores += 1;
+        $('#computer-scores').text(computerScores);
+    }
+    
+
+}
+
+
+
+
+
+

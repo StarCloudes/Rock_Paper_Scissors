@@ -17,7 +17,7 @@
   </head>
   <body class="bg-dark">
     <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
-      <a class="navbar-brand ml-3" href="#"><i class="fa fa-home fa-2x"></i></a>
+      <a class="navbar-brand ml-3" href="#" data-toggle="tooltip" data-placement="bottom" title="about"><i class="fa fa-snapchat-ghost fa-2x"></i></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
         aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -43,9 +43,13 @@
                 title="rock"><i class="fa fa-hand-rock-o fa-5x"></i></button>
             <button id="paper" name="choice" type="button" class="btn btn-dark btn-rock" data-toggle="tooltip" data-placement="bottom"
                 title="paper"><i class="fa fa-hand-paper-o fa-5x"></i></button>
-                
-            </div>
+           </div>
         </div>
+    </div>
+    <div class="score">
+      <div>电脑得分：<span id="computer-scores">0</span></div>
+      <div id="vs"><div>
+      <div>用户得分：<span id="user-scores">0</span></div>
     </div>
 
   <script>
