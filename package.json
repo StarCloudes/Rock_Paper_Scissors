@@ -18,5 +18,8 @@
   "homepage": "https://github.com/StarCloudes/Rock_Paper_Scissors#readme",
   "devDependencies": {
     "electron": "^1.7.10"
+  },
+  "dependencies": {
+    "nedb": "^1.8.0"
   }
 }
