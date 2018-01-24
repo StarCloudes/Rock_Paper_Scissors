@@ -13,9 +13,13 @@
     margin-top: 5%;
 }
 
-.score{
+#scores{
 	text-align: center;
 	font-size: 45px;
 	color: #d2cfb7;
-	margin-top:5%;
+	margin-top:2%;
+}
+#reset {
+    font-size: 2rem;
+    margin-top:40px;
 }
