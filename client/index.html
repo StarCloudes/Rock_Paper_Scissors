@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>石头剪刀布</title>
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <div class="rps-wrapper">
+      <ul id="events"></ul>
+      <div class="controls">
+        <div class="chat-wrapper">
+          <form id="chat-form">
+            <input id="chat" title="chat" autofocus="autofocus" />
+            <button id="say">发送</button>
+          </form>
+        </div>
+
+        <div class="button-wrapper">
+          <button id="rock" class="choice">石头✊🏻</button>
+          <button id="paper" class="choice">布🖐🏻</button>
+          <button id="scissors" class="choice">剪刀✌🏻</button>
+        </div>
+      </div>
+    </div>
+  
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="src/client.js"></script>
+  </body>
+</html>
