@@ -1,6 +1,7 @@
 ## Rock Paper Scissors Game
-### 项目要求
+### 项目
 剪刀石头布网格对战游戏，后端使用Node.js，前端使用Electron封装。
+游戏实现了客户端之间的实时通信。
 
 ### ✅项目运行
 1. 下载rep到本地。
@@ -11,12 +12,4 @@
 1.游戏模式（人机、在线）的选择
 2.模块化
 
-### 🙏感谢开源
-1. Bootstrape https://github.com/twbs/bootstrap
-2. Font-awesome https://github.com/FortAwesome/Font-Awesome
-3. SweetAlert https://github.com/t4t5/sweetalert
-4. jquery https://github.com/jquery/jquery
-5. popperjs https://github.com/FezVrasta/popper.js/
-6. nodejs https://github.com/nodejs/node
-7. electron https://github.com/electron/electron
-8. nedb https://github.com/louischatriot/nedb
+
